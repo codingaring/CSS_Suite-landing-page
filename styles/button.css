@@ -1,0 +1,32 @@
+.button-primary {
+  background-color: var(--Dark-Blue);
+  padding: 1.5rem 3.2rem;
+  color: var(--Cream-White);
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.018rem;
+}
+
+.button-primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--Purple) 0%,
+    var(--Pink) 49.21%,
+    var(--Orange) 100%
+  );
+}
+
+.button-secondary {
+  border: 0.1rem solid var(--Dark-Blue);
+  background-color: none;
+  color: #172339;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.016rem;
+}
+
+.button-secondary:hover {
+  color: var(--Cream-White);
+  background-color: var(--Dark-Blue);
+}
