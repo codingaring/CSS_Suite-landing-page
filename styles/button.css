@@ -2,9 +2,11 @@
   background-color: var(--Dark-Blue);
   padding: 1.5rem 3.2rem;
   color: var(--Cream-White);
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: -0.018rem;
+  border-radius: 0.6rem;
 }
 
 .button-primary:hover {
@@ -18,12 +20,19 @@
 
 .button-secondary {
   border: 0.1rem solid var(--Dark-Blue);
-  background-color: none;
+  padding: 1.2rem 2.4rem;
+  background-color: rgba(100, 100, 100, 0);
   color: #172339;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: -0.016rem;
+  border-radius: 0.6rem;
+
+  @media screen and (max-width: 375px) {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.5rem;
+  }
 }
 
 .button-secondary:hover {
