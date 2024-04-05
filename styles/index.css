@@ -207,7 +207,8 @@ main {
   border-radius: 1.5rem;
   padding-bottom: 0;
   display: flex;
-  z-index: 100;
+  margin-bottom: -20rem;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -241,7 +242,6 @@ main {
   }
 
   @media screen and (max-width: 768px) {
-    left: 20%;
   }
 }
 
@@ -303,6 +303,10 @@ main {
 
 .work-title {
   font-weight: 400;
+  @media screen and (max-width: 375px) {
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 
 .work-title span {
@@ -326,11 +330,13 @@ main {
 
 /** **/
 footer {
+  position: relative;
   background-color: var(--Cream);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 36rem 16.6rem 7.2rem 16.6rem;
+  z-index: -100;
 
   @media screen and (max-width: 768px) {
     padding: 0 3.9rem;
