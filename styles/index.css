@@ -43,6 +43,7 @@ main {
     padding: 0 1.6rem;
   }
 }
+
 .decoration-line-DarkBlue {
   width: 28.7rem;
   position: absolute;
@@ -207,12 +208,14 @@ main {
   border-radius: 1.5rem;
   padding-bottom: 0;
   display: flex;
-  z-index: 100;
+  margin-bottom: -20rem;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     margin-top: 25rem;
     padding-left: 5.8rem;
+    margin-bottom: -7em;
   }
 
   @media screen and (max-width: 768px) {
@@ -229,19 +232,19 @@ main {
 }
 
 .person-image {
-  width: 36rem;
   position: absolute;
+  width: 36rem;
   bottom: 0;
   z-index: 1;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 25.2rem;
-    left: 50%;
+    left: 55%;
   }
 
-  @media screen and (max-width: 768px) {
-    left: 20%;
+  @media screen and (max-width: 375px) {
+    left: 15%;
   }
 }
 
@@ -274,10 +277,12 @@ main {
   width: 6.4rem;
 
   @media screen and (max-width: 768px) {
+    bottom: -54rem;
     width: 4.9rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 375px) {
+    bottom: -80rem;
   }
 }
 
@@ -303,6 +308,10 @@ main {
 
 .work-title {
   font-weight: 400;
+  @media screen and (max-width: 375px) {
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 
 .work-title span {
@@ -326,18 +335,21 @@ main {
 
 /** **/
 footer {
+  position: relative;
   background-color: var(--Cream);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 36rem 16.6rem 7.2rem 16.6rem;
+  z-index: -10;
 
   @media screen and (max-width: 768px) {
-    padding: 0 3.9rem;
+    padding: 20rem 3.9rem 5rem 3.9rem;
   }
 
   @media screen and (max-width: 375px) {
-    padding: 0 1.6rem;
+    flex-direction: column;
+    gap: 3.3rem;
   }
 }
 
